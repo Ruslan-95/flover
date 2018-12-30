@@ -86,13 +86,19 @@ a {
 
   &__tel {
     font-size: 30px;
-    position: absolute;
-    top: 50px;
-    z-index: 2;
-    background: -webkit-linear-gradient(#868686, #000000);
+    position: fixed;
+    text-shadow: 1px 1px 27px #732e29, 0 0 3em #ffffff;
+    top: 35px;
+    z-index: 3;
+    background: #000000;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     min-height: 35px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      top: 15px;
+      letter-spacing: 5px;
+    }
   }
   &__title {
     z-index: 2;

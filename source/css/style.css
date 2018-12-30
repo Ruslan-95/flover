@@ -1,0 +1,95 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  background-image: radial-gradient(circle, #35ddff, rgba(255, 114, 230, 0.3)); }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+@media (min-width: 320px) {
+  body {
+    max-width: 320px; } }
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px; } }
+
+@media (min-width: 1400px) {
+  body {
+    max-width: 1200px; } }
+
+.welcome {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .welcome a {
+    position: absolute;
+    top: 50px; }
+  .welcome__select-btn {
+    height: 70px; }
+
+.about {
+  background: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .about__text {
+    max-width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px; }
+  .about__img {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    padding: 30px; }
+
+.bears {
+  background: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .bears__figure {
+    margin: 0 auto; }
+  .bears__img {
+    max-width: 320px; }

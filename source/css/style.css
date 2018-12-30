@@ -48,7 +48,10 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
     .about .about__text {
-      max-width: 100%; } }
+      max-width: 100%; }
+    .about .about__img {
+      max-width: 100%;
+      padding: 0; } }
 
 @media (max-width: 1024px) {
   body {
@@ -70,7 +73,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center; }
-  .welcome a {
+  .welcome__tel {
     position: absolute;
     top: 50px;
     z-index: 2; }
@@ -83,7 +86,7 @@ a {
     z-index: 2; }
 
 .about {
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,13 +116,34 @@ a {
     padding: 30px; }
 
 .bears {
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .bears__figure {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 5px 0 35px; }
   .bears__img {
     max-width: 320px; }
+
+.btn {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #434445;
+  border-radius: 30px;
+  border: none;
+  padding: 0 15px 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .btn:hover {
+    background-color: white;
+    color: #000000; }

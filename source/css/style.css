@@ -74,9 +74,14 @@ a {
           align-items: center;
   text-align: center; }
   .welcome__tel {
+    font-size: 30px;
     position: absolute;
     top: 50px;
-    z-index: 2; }
+    z-index: 2;
+    background: -webkit-linear-gradient(#868686, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    min-height: 35px; }
   .welcome__title {
     z-index: 2; }
   .welcome__paragraph {

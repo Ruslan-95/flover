@@ -11,20 +11,30 @@ body {
   background-image: radial-gradient(circle, #35ddff, rgba(255, 114, 230, 0.3));
 }
 
-.welcome__video-wrapper {
-  max-width: 100%;
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 73px;
+  letter-spacing: 12px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #ffabc3, 0 0 1em #aae5ff;
+  @media (max-width: 767px) {
+    font-size: 43px;
+    letter-spacing: 7px;
+  }
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
 }
 
-video {
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: -1;
-  height: 70vh;
+h2 {
+  font-size: 37px;
+  line-height: 35px;
+  @media (max-width: 767px) {
+    font-size: 34px;
+  }
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -95,6 +105,20 @@ a {
     height: 70px;
     z-index: 2;
   }
+  .welcome__video-wrapper {
+    max-width: 100%;
+  }
+  video {
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    height: 70vh;
+  }
 }
 
 .about {
@@ -128,8 +152,15 @@ a {
 
 .bears {
   background: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-wrap: wrap;
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    margin: 0;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
   &__figure {
     margin: 0 auto;
     padding: 5px 0 35px;
@@ -143,6 +174,7 @@ a {
   &__price {
 
   }
+
 }
 
 .btn {

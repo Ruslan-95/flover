@@ -83,7 +83,8 @@ a {
     -webkit-text-fill-color: transparent;
     min-height: 35px; }
   .welcome__title {
-    z-index: 2; }
+    z-index: 2;
+    padding: 60px 0 0; }
   .welcome__paragraph {
     z-index: 2; }
   .welcome__select-btn {
